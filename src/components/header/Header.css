@@ -1,0 +1,150 @@
+header {
+    background-color: #1E1E1E;
+    max-width: 1240px;
+    width: 95%;
+    height: 40px;
+    font-family: "Sora", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    border: 1px solid #EFEFEF;
+    font-size: 14px;
+    margin: 30px auto 0 auto;
+}
+
+
+.leftContainer {
+    display: flex;
+    height: 40px;
+}
+
+.logoBar {
+    width: 126px;
+    background-color: #EFEFEF;
+    position: relative;
+    padding: 0 20px;
+}
+
+.imgLogoBar{
+    position: absolute;
+    bottom: -21%;
+}
+
+
+.navItems {
+    display: flex;
+    gap: 18px;
+    text-decoration: none;
+    align-items: center;
+    padding-right: 10px;
+    /* line-height: 100%; */
+    /* letter-spacing: 0%; */
+
+}
+.navItem {
+    color: white;
+    outline: none;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Sora", sans-serif;
+}
+
+.navItems > div {
+    width: max-content;
+}
+
+.searchInput input {
+    background-color: #1E1E1E;
+    border: none;
+    color: #EFEFEF;
+    font-weight: 200;
+    font-size: 12px;
+    font-family: "Sora", sans-serif;
+    width: 100%;
+    height: 100%;
+    padding-right: 0 15px;
+}
+.searchInput input::placeholder {
+    color: #EFEFEF;
+}
+.searchInput {
+    min-width: 213px;
+    width: 100%;
+    max-width: 213px;
+    height: 100%;
+    display: flex;
+    gap: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #EFEFEF;
+    border-left: 1px solid #EFEFEF;
+    padding: 12px 8px 12px 6px;
+}
+
+.userContainer {
+    max-width: 100%;
+}
+
+.userContainer > img {
+
+    padding: 11px;
+    flex-grow: 1;
+}
+
+
+.userContainer > button {
+    all: unset;
+}
+
+.cartContainer {
+    max-width: 100%;
+
+}
+
+.cartContainer > button {
+    all: unset;
+}
+
+.collectionsHeader {
+    color: white;
+    display: flex;
+    gap: 10px;
+}
+
+.collectionsContainer {
+    border-right: 1px solid #EFEFEF;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.collectionsContainer:first-child {
+    font-weight: 700;
+}
+
+
+
+.rightContainer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    /* width: 100%; */
+}
+
+
+
+.userContainer, .cartContainer {
+    padding: 11px;
+}
+
+.userContainer {
+    border: 1px solid #EFEFEF;
+}
+
+.cartContainer {
+    border: none;
+    border-right: 1px soli #EFEFEF;
+}
