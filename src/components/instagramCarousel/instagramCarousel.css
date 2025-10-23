@@ -1,0 +1,53 @@
+.socialCarousel {
+  max-width: 1280px;
+  margin: auto;
+  --slide-height: 19rem;
+  --slide-spacing: 1.8rem;
+  --slide-size: 22%;
+}
+.socialCarousel__viewport {
+  overflow: hidden;
+  position: relative;
+}
+.socialCarousel__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+.socialCarousel__slide {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+}
+.socialCarousel__slide__number {
+  /* box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast); */
+  border-radius: 1.8rem;
+  font-size: 4rem;
+  font-weight: 600;
+  display: flex;
+  height: 481px;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+
+.socialCarouselTitle {
+  color: #7EB4C8;
+  font-size: 75px;
+  margin: 0;
+  display: block;
+  position: absolute;
+  z-index: 5;
+  top: 43px;
+  left: 228px;
+}
+
+.socialCarouselParagraph {
+  font-size: 20px;
+  color: #373737;
+  display: block;
+  max-width: 500px;
+  margin: 0 0px 54px 234px;
+}
