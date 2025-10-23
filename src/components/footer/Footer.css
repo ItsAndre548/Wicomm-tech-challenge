@@ -139,6 +139,15 @@ footer {
     padding: 19px 0 0 16px;
 }
 
+.securityIcon {
+  position: relative;
+  display: inline-block;
+}
+
+.securityIcon img {
+  display: block;
+  filter: grayscale(100%);
+}
 
 
 .securityIconsContainer {
@@ -164,7 +173,25 @@ footer {
     gap: 3px;
     width: 160px;
 }
+.paymentIcon {
+  position: relative;
+  display: inline-block;
+}
+.paymentIcon img {
+  display: block;
+  width: 37px;
+  height: 23px;
+  filter: grayscale(100%);
+}
 
+.paymentIcon::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  pointer-events: none;
+}
 
 .social {
     display: grid;

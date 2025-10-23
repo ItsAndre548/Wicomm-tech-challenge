@@ -3,11 +3,17 @@ import "./Footer.css";
 export default function FooterSecurity({ certificateTitle, securityIcons }) {
   return (
     <div className="security">
-        <p className="footerTitle">{certificateTitle}</p>
+      <p className="footerTitle">{certificateTitle}</p>
       {securityIcons.length > 0 ? (
         <div className="securityIconsContainer">
           {securityIcons.map((icon, index) => (
-            <a href={icon.link} key={index} target="_blank" rel="noopener noreferrer">
+            <a
+              href={icon.link}
+              className="securityIcon"
+              key={index}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src={icon.src}
                 width={icon.width}
@@ -18,7 +24,7 @@ export default function FooterSecurity({ certificateTitle, securityIcons }) {
           ))}
         </div>
       ) : (
-        <p>No payment icons available.</p>
+        <p>No security icons available.</p>
       )}
     </div>
   );

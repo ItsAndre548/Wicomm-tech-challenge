@@ -7,7 +7,7 @@ export default function FooterPaymentMethod({ paymentTitle, icons }) {
       {icons.length > 0 ? (
         <div className="paymentIcons">
           {icons.map((icon, index) => (
-            <a href={icon.link}  key={index} target="_blank" rel="noopener noreferrer">
+            <a href={icon.link} class="paymentIcon"  key={index} target="_blank" rel="noopener noreferrer">
               <img
                 src={icon.src}
                 width={37}
