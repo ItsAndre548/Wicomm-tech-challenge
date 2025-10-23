@@ -62,11 +62,6 @@ footer {
     
 }
 
-.footerTitle {
-    color: #373737;
-    font-weight: 700;
-}
-
 .div3 {
     border-top: 1px solid black;
     padding: 19px 21px 0 21px;
@@ -179,11 +174,6 @@ footer {
     padding: 24px 11px 20px 11px;
     gap: 18px;
 }
-
-
-
-
-
 
 .paymentIcon img {
   display: block;

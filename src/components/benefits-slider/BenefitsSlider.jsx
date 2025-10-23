@@ -4,11 +4,11 @@ import './BenefitsSlider.css';
 const BenefitsSlider = ({ secondaryBenefits, sliderItems, mainBenefit }) => {
 
   return (
-    <div className="benefits-container">
-      <div className="benefits-main">
-        <div className="main-benefit">
-          <div className="benefit-number">{mainBenefit.number}</div>
-          <div className="benefit-content">
+    <div className="benefitsContainer">
+      <div className="benefitsMain">
+        <div className="greaterBenefits">
+          <div className="benefitNumber">{mainBenefit.number}</div>
+          <div className="benefitContent">
             <h3>{mainBenefit.title}</h3>
             <p>{mainBenefit.description}</p>
           </div>
@@ -17,23 +17,23 @@ const BenefitsSlider = ({ secondaryBenefits, sliderItems, mainBenefit }) => {
       <div className="secondaryBenefictsFather">
         <div className="secondaryBenefictsContainer">
         {secondaryBenefits.map((benefit, index) => (
-            <div key={index} className="secondary-benefit">
-              <div className="benefit-icon">
+            <div key={index} className="secondaryBenefit">
+              <div className="benefitIcon">
                 <img src="./Assets/prize.svg" width={46} height={48} alt="star Icon"/>
                 <p>{benefit.title}</p>
               </div>
-              <div className="benefit-content">
+              <div className="benefitContent">
                 <p>{benefit.description}</p>
               </div>
             </div>
           ))}
         </div>
-        <div className="benefits-container">
-          <div className="benefits-track">
+        <div className="benefitsContainer">
+          <div className="benefitsTrack">
             {[...sliderItems, ...sliderItems].map((item, index) => (
               <React.Fragment key={index}>
-                <span className="benefits-item">{item}</span>
-                <span className="benefits-separator"><img src="/Assets/paw.svg"  alt="pequena patinha"/></span>
+                <span className="benefitsItem">{item}</span>
+                <span className="benefitsSeparator"><img src="/Assets/paw.svg"  alt="pequena patinha"/></span>
               </React.Fragment>
             ))}
         </div>

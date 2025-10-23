@@ -4,6 +4,7 @@
     --slide-size: 90%;
     overflow: hidden;
     margin-top: -70px;
+    position: relative;
   }
   .embla__viewport {
     overflow: hidden;
@@ -23,31 +24,22 @@
   .img-carousel {
     object-fit: cover;
     width: 100%;
-    overflow: hidden;
   }
 
-
-  .embla {
-    position: relative;
-  }
-
-.embla__button--prev {
+  .embla__button {
   position: absolute;
   top: 45%;
   padding: 25px;
-  left: 7%;
   background-color: transparent;
-  border:none;
+  border: none;
+}
+.embla__button--prev {
+  left: 7%;
+}
+.embla__button--next {
+  right: 7%;
 }
 
-.embla__button--next {
-  position: absolute;
-  right: 7%;
-    top: 45%;
-  padding: 25px;
-  background-color: transparent;
-  border:none;
-}
 
 .embla__button--next > svg {
   transform: rotate(180deg);

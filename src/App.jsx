@@ -173,16 +173,16 @@ function App() {
   ];
   const securityIcons = [
     {
-      src: "/Assets/secureSeals/empresaBcertificada.png",
+      src: "/Assets/empresaBcertificada.png",
       windth: 68,
       height: 100,
     },
     {
-      src: "/Assets/secureSeals/opinioesverdadeiras.png",
+      src: "/Assets/opinioesverdadeiras.png",
       windth: 68,
       height: 75,
     },
-    { src: "/Assets/secureSeals/encryption.png", windth: 110, height: 46 },
+    { src: "/Assets/encryption.png", windth: 110, height: 46 },
   ];
   const Socials = [
     {
