@@ -192,7 +192,7 @@ function App() {
       height: 19,
     },
     {
-      src: "/Assets/youtube.png",
+      src: "/Assets/youtube.svg",
       link: "/youtube",
       width: 19,
       height: 19,
