@@ -2,6 +2,13 @@
     background: #DE5A53;
     padding: 40px 20px 0;
     margin: 0 auto;
+    padding: 12px 0;
+    overflow: hidden;
+    max-width: 1180px;
+    border: 1px solid white;
+    border-top: none;
+    position: relative;
+    background-color: #DE5A53;
   }
   
   .benefits-main {
@@ -88,16 +95,6 @@
       line-height: 100%;
   }
   
-
-  .benefits-container {
-    padding: 12px 0;
-    overflow: hidden;
-    max-width: 1180px;
-    border: 1px solid white;
-    border-top: none;
-    position: relative;
-    background-color: #DE5A53 !important;
-  }
 
   .secondaryBenefictsFather {
     overflow: hidden;
