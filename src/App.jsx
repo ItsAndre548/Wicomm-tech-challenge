@@ -135,7 +135,7 @@ function App() {
 
   const product = [
     {
-      img: "/Assets/ProductImage.png",
+      img: "/Assets/productImage.png",
       title: "Toca Túnel Módulos",
       imgHover: "/Assets/ProductHover.png",
       price: "0000,00",
@@ -144,7 +144,7 @@ function App() {
       launch: true,
     },
     {
-      img: "/Assets/ProductImage.png",
+      img: "/Assets/productImage.png",
       title: "Toca Túnel Módulos",
       imgHover: "/Assets/ProductHover.png",
       price: "0000,00",
@@ -153,7 +153,7 @@ function App() {
       launch: true,
     },
     {
-      img: "/Assets/ProductImage.png",
+      img: "/Assets/productImage.png",
       title: "Toca Túnel Módulos",
       imgHover: "/Assets/ProductHover.png",
       price: "0000,00",
