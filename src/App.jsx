@@ -289,18 +289,18 @@ function App() {
   const contactEmail = "ajuda@gat.com.br";
   const formImage = "/Assets/formImage.png";
   const instagramSlides = [
-    { src: "/Assets/group36.png" },
-    { src: "/Assets/group37.png" },
-    { src: "/Assets/group38.png" },
-    { src: "/Assets/group39.png" },
-    { src: "/Assets/group40.png" },
-    { src: "/Assets/group40.png" },
-    { src: "/Assets/group40.png" },
-    { src: "/Assets/group40.png" },
-    { src: "/Assets/group40.png" },
-    { src: "/Assets/group40.png" },
-    { src: "/Assets/group40.png" },
-    { src: "/Assets/group40.png" },
+    { src: "/Assets/Group36.png" },
+    { src: "/Assets/Group37.png" },
+    { src: "/Assets/Group38.png" },
+    { src: "/Assets/Group39.png" },
+    { src: "/Assets/Group40.png" },
+    { src: "/Assets/Group40.png" },
+    { src: "/Assets/Group40.png" },
+    { src: "/Assets/Group40.png" },
+    { src: "/Assets/Group40.png" },
+    { src: "/Assets/Group40.png" },
+    { src: "/Assets/Group40.png" },
+    { src: "/Assets/Group40.png" },
   ]
 
   const OPTIONS = { loop: true };
