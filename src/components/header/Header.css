@@ -11,6 +11,8 @@ header {
     border: 1px solid #EFEFEF;
     font-size: 14px;
     margin: 30px auto 0 auto;
+    z-index: 10;
+    position: relative;
 }
 
 
