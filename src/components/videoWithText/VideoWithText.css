@@ -1,0 +1,89 @@
+.videoWithTextContainer {
+    display: flex;
+    max-width: 1026px;
+    background-color: #efefef;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 42px;
+    height: 563px;
+}
+
+video {
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.videoWrapper {
+  position: relative;
+  display: inline-block;
+  width: 504px;
+  height: 284px;
+}
+
+.playIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  pointer-events: none;
+}
+
+.videoLeftContainer {
+    position: relative;
+    flex: 0;
+}
+
+.redSphere {
+    width: 272px;
+    height: 272px;
+    border-radius: 50%;
+    background-color: #BB3735;
+    position: absolute;
+    z-index: 1;
+    top: -26px;
+    left: 160px;
+}
+
+.videoTitleContainer {
+    z-index: 3;
+    position: relative;
+    margin-top: 57px;
+    width: 396px;
+}
+
+
+.videoWithTextTitle {
+    font-size: 70px;
+    color: #373737;
+    font-weight: 400;
+    /* z-index: 2; */
+}
+.videoRightContainer {
+    width: 100%;
+}
+
+
+.videoTextContent {
+    width: 505px;
+    height: 60px;
+    color: #373737;
+    font-size: 14px;
+    margin-top: 55px;
+}
+
+.videoTextContent a {
+    padding: 10px 87px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    border-radius: 29px;
+    margin-top: 46px;
+}
+
+.videoWithTextDescription {
+    margin: 0;
+    margin-bottom: 46px;
+}
