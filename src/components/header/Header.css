@@ -113,7 +113,6 @@ header {
 .collectionsHeader {
     color: white;
     display: flex;
-    gap: 10px;
 }
 
 .collectionsContainer {
