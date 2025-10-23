@@ -8,6 +8,7 @@ import HeroSlider from "./components/HeroSlider/HeroSlider";
 import CategoriesNavigation from "./components/CategoriesNavigation/CategoriesNavigation";
 import HotspotGallery from "./components/hotspot/HotSpotGallery";
 import VideoWithText from "./components/videoWithText/VideoWithText";
+import InstagramCarousel from './components/instagramCarousel/InstagramCarousel.jsx'
 
 function App() {
   const headerLogo = "/Assets/HeaderLogo.png";
@@ -221,7 +222,7 @@ function App() {
   const hotspotItems = [
     {
       top: "47%",
-      left: "11%",
+      left: "19%",
       buttonLetter: "1",
       title: "Lorem Ipsum Dolor Sit",
       description:
@@ -230,8 +231,8 @@ function App() {
       linkText: "VER SELEÇÃO",
     },
     {
-      top: "53%",
-      left: "24.5%",
+      top: "54%",
+      left: "34.5%",
       buttonLetter: "2",
       title: "Lorem Ipsum Dolor Sit",
       description:
@@ -240,8 +241,8 @@ function App() {
       linkText: "VER SELEÇÃO",
     },
     {
-      top: "11%",
-      left: "32%",
+      top: "10%",
+      left: "42%",
       buttonLetter: "3",
       title: "Lorem Ipsum Dolor Sit",
       description:
@@ -251,7 +252,7 @@ function App() {
     },
     {
       top: "23%",
-      left: "51.5%",
+      left: "61.5%",
       buttonLetter: "4",
       title: "Lorem Ipsum Dolor Sit",
       description:
@@ -260,8 +261,8 @@ function App() {
       linkText: "VER SELEÇÃO",
     },
     {
-      top: "49%",
-      left: "58%",
+      top: "50%",
+      left: "68%",
       buttonLetter: "5",
       title: "Lorem Ipsum Dolor Sit",
       description:
@@ -287,6 +288,20 @@ function App() {
   const contactNumber = "(51) 9999-9999";
   const contactEmail = "ajuda@gat.com.br";
   const formImage = "/Assets/formImage.png";
+  const instagramSlides = [
+    { src: "/Assets/instagram/group36.png" },
+    { src: "/Assets/instagram/group37.png" },
+    { src: "/Assets/instagram/group38.png" },
+    { src: "/Assets/instagram/group39.png" },
+    { src: "/Assets/instagram/group40.png" },
+    { src: "/Assets/instagram/group40.png" },
+    { src: "/Assets/instagram/group40.png" },
+    { src: "/Assets/instagram/group40.png" },
+    { src: "/Assets/instagram/group40.png" },
+    { src: "/Assets/instagram/group40.png" },
+    { src: "/Assets/instagram/group40.png" },
+    { src: "/Assets/instagram/group40.png" },
+  ]
 
   const OPTIONS = { loop: true };
   return (
@@ -308,11 +323,12 @@ function App() {
       <HeroSlider heroItems={HeroCarousel} options={OPTIONS} />
       <CategoriesProduct categories={categorieTitle} products={product} />
       <CategoriesNavigation categories={categorieNav} />
-      <HotspotGallery
+    <HotspotGallery
         backgroundImage="/Assets/CatsPlayingHouse.png"
         hotspotItem={hotspotItems}
       />
       <VideoWithText {...video[0]} />
+      <InstagramCarousel slides={instagramSlides} options={OPTIONS} />
       <Footer
         formImage={formImage}
         logoFooter={logoFooter}

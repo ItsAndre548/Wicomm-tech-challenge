@@ -109,14 +109,13 @@
   left: 241px;
   width: 338px;
 }
-/* Container do texto no meio */
+
 .heroSliderText_container div {
   position: relative;
   max-width: 338px;
   width: 100%;
   font-size: 16px;
   line-height: 1.6;
-  position: relative;
   z-index: 2;
   align-self: center;
   flex-shrink: 0;
