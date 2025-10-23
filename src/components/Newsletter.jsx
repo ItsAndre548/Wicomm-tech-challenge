@@ -24,7 +24,7 @@ export default function NewsletterForm({ formImage }) {
   return (
     <section className="newsletterSection">
       <div>
-        <img src={formImage} width={505} height={347} alt="" />
+        <img src={formImage} width={505} height={347} alt={formImage} />
       </div>
       <div className="newsletterTitleContainer">
         <p className="newsletterTitle">NEWSLETTER</p>

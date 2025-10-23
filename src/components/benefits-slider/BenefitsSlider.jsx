@@ -19,7 +19,7 @@ const BenefitsSlider = ({ secondaryBenefits, sliderItems, mainBenefit }) => {
         {secondaryBenefits.map((benefit, index) => (
             <div key={index} className="secondary-benefit">
               <div className="benefit-icon">
-                <img src="./Assets/prize.svg" width={46} height={48} />
+                <img src="./Assets/prize.svg" width={46} height={48} alt="star Icon"/>
                 <p>{benefit.title}</p>
               </div>
               <div className="benefit-content">
@@ -33,7 +33,7 @@ const BenefitsSlider = ({ secondaryBenefits, sliderItems, mainBenefit }) => {
             {[...sliderItems, ...sliderItems].map((item, index) => (
               <React.Fragment key={index}>
                 <span className="benefits-item">{item}</span>
-                <span className="benefits-separator"><img src="/Assets/paw.svg" /></span>
+                <span className="benefits-separator"><img src="/Assets/paw.svg"  alt="pequena patinha"/></span>
               </React.Fragment>
             ))}
         </div>

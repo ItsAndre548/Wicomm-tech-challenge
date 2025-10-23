@@ -186,25 +186,25 @@ function App() {
   ];
   const Socials = [
     {
-      src: "/Assets/socials/instagram.png",
+      src: "/Assets/instagram.png",
       link: "/instagram",
       width: 19,
       height: 19,
     },
     {
-      src: "/Assets/socials/youtube.png",
+      src: "/Assets/youtube.png",
       link: "/youtube",
       width: 19,
       height: 19,
     },
     {
-      src: "/Assets/socials/linkedin.png",
+      src: "/Assets/linkedin.png",
       link: "/linkedin",
       width: 19,
       height: 19,
     },
     {
-      src: "/Assets/socials/facebook.png",
+      src: "/Assets/facebook.png",
       link: "/facebook",
       width: 9,
       height: 18,
