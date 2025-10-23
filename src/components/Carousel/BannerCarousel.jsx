@@ -8,7 +8,7 @@ import {
 import useEmblaCarousel from "embla-carousel-react";
 import "./Embla.css";
 
-const EmblaCarousel = (props) => {
+const BannerCarousel = (props) => {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
@@ -67,4 +67,4 @@ const EmblaCarousel = (props) => {
   );
 };
 
-export default EmblaCarousel;
+export default BannerCarousel;

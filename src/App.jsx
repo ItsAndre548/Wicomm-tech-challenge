@@ -3,7 +3,7 @@ import BenefitsSlider from "./components/benefits-slider/BenefitsSlider.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import Header from "./components/header/Header.jsx";
 import CategoriesProduct from "./components/products/CategoriesProduct.jsx";
-import EmblaCarousel from "./components/Carousel/EmblaCarousel.jsx";
+import BannerCarousel from "./components/Carousel/BannerCarousel.jsx";
 import HeroSlider from "./components/HeroSlider/HeroSlider.jsx";
 import CategoriesNavigation from "./components/CategoriesNavigation/CategoriesNavigation.jsx";
 import HotspotGallery from "./components/hotspot/HotSpotGallery.jsx";
@@ -13,7 +13,7 @@ import InstagramCarousel from "./components/instagramCarousel/InstagramCarousel.
 function App() {
   //Header
 
-  const headerLogo = "/Assets/HeaderLogo.png";
+  const headerLogo = "/Assets/header/HeaderLogo.png";
 
   const navItems = [
     { href: "/blog", label: "blog" },
@@ -23,24 +23,24 @@ function App() {
   ];
 
   const itemsCollection = [
-    { src: "/Assets/menu_01.png", collectionName: "Produtos" },
-    { src: "/Assets/menu_02.png", collectionName: "Coleções" },
+    { src: "/Assets/header/menu_01.png", collectionName: "Produtos" },
+    { src: "/Assets/header/menu_02.png", collectionName: "Coleções" },
   ];
-  const searchIcon = "/Assets/search.svg";
-  const userIcon = "/Assets/user.png";
-  const cartIcon = "/Assets/cart.png";
+  const searchIcon = "/Assets/header/search.svg";
+  const userIcon = "/Assets/header/user.png";
+  const cartIcon = "/Assets/header/cart.png";
 
   //main carousel
 
   const slides = [
     {
-      src: "/Assets/banner_01.png",
+      src: "/Assets/banner/banner_01.png",
       alt: "nossa nova coleção",
       href: "/new-colection",
       btnText: "VER COLEÇÃO",
     },
-    { src: "/Assets/banner_02.png", alt: "gato dormindo", href: "/our-cats" },
-    { src: "/Assets/banner_03.png", alt: "gato no sol", href: "/more-cats" },
+    { src: "/Assets/banner/banner_02.png", alt: "gato dormindo", href: "/our-cats" },
+    { src: "/Assets/banner/banner_03.png", alt: "gato no sol", href: "/more-cats" },
   ];
 
   //carousel beneficts
@@ -84,8 +84,8 @@ function App() {
       altLeft: "arranhador",
       rightImage: "/Assets/ProductHover.png",
       altRight: "casa para gatos",
-      paragraphBGimage: "/Assets/Rectangle33.svg",
-      rightBGimage: "/Assets/Rectangle34.svg",
+      paragraphBGimage: "/Assets/heroSlide/Rectangle33.svg",
+      rightBGimage: "/Assets/heroSlide/Rectangle34.svg",
       paragraph:
         "Also reality power discussion buy-in closest goto model. Have protocol at long practices low-hanging data most driver's.",
       hotspots: [
@@ -151,28 +151,28 @@ function App() {
   const categorieNav = [
     {
       name: "CLÁSSICO",
-      icon: "/Assets/classico.png",
+      icon: "/Assets/navsection/classico.png",
       width: "38",
       height: "42",
       link: "/classic",
     },
     {
       name: "MINIMALISMO",
-      icon: "/Assets/minimalismo.png",
+      icon: "/Assets/navsection/minimalismo.png",
       width: "36",
       height: "37",
       link: "/minimalismo",
     },
     {
       name: "MAXIMALISMO",
-      icon: "/Assets/maximalismo.png",
+      icon: "/Assets/navsection/maximalismo.png",
       width: "42",
       height: "32",
       link: "/maximalismo",
     },
     {
       name: "BOHO",
-      icon: "/Assets/boho.png",
+      icon: "/Assets/navsection/boho.png",
       width: "46",
       height: "32",
       link: "/boho",
@@ -180,6 +180,7 @@ function App() {
   ];
 
   //HOTSPOTGALLERY
+  const hotSpotGalleryBackground = "/Assets/CatsPlayingHouse.png"
 
   const hotspotItems = [
     {
@@ -251,11 +252,11 @@ function App() {
   //instagram slides
 
   const instagramSlides = [
-    { src: "/Assets/Group36.png" },
-    { src: "/Assets/Group37.png" },
-    { src: "/Assets/Group38.png" },
-    { src: "/Assets/Group39.png" },
-    { src: "/Assets/Group40.png" },
+    { src: "/Assets/instagramgallery/Group36.png" },
+    { src: "/Assets/instagramgallery/Group37.png" },
+    { src: "/Assets/instagramgallery/Group38.png" },
+    { src: "/Assets/instagramgallery/Group39.png" },
+    { src: "/Assets/instagramgallery/Group40.png" },
   ];
   const upperParagraph =
     "Faça parte da comunidade de gatunos que amam design e papelão compartilhando a hashtag: ";
@@ -266,7 +267,7 @@ function App() {
   const formImage = "/Assets/formImage.png";
 
   //footer
-  const logoFooter = "/Assets/logofooter.png";
+  const logoFooter = "/Assets/footer/logofooter.png";
 
   //footer navigaton
   const footerNavItems = [
@@ -278,13 +279,13 @@ function App() {
 
   //footer payment method
   const paymentsIcons = [
-    { src: "/Assets/payment/americanexpress.png" },
-    { src: "/Assets/payment/discover.png" },
-    { src: "/Assets/payment/visa.png" },
-    { src: "/Assets/payment/mastercard.png" },
-    { src: "/Assets/payment/elo.png" },
-    { src: "/Assets/payment/pix.png" },
-    { src: "/Assets/payment/hipercard.png" },
+    { src: "/Assets/footer/payment/americanexpress.png" },
+    { src: "/Assets/footer/payment/discover.png" },
+    { src: "/Assets/footer/payment/visa.png" },
+    { src: "/Assets/footer/payment/mastercard.png" },
+    { src: "/Assets/footer/payment/elo.png" },
+    { src: "/Assets/footer/payment/pix.png" },
+    { src: "/Assets/footer/payment/hipercard.png" },
   ];
   const paymentTitle = "FORMAS DE PAGAMENTO";
 
@@ -292,16 +293,16 @@ function App() {
   const certificate = "CERTIFICADOS E SEGURANÇA";
   const securityIcons = [
     {
-      src: "/Assets/empresaBcertificada.png",
+      src: "/Assets/footer/certificate/empresaBcertificada.png",
       windth: 68,
       height: 100,
     },
     {
-      src: "/Assets/opinioesverdadeiras.png",
+      src: "/Assets/footer/certificate/opinioesverdadeiras.png",
       windth: 68,
       height: 75,
     },
-    { src: "/Assets/encryption.png", windth: 110, height: 46 },
+    { src: "/Assets/footer/certificate/encryption.png", windth: 110, height: 46 },
   ];
 
   //FAQ
@@ -321,25 +322,25 @@ function App() {
   //footer social medias
   const Socials = [
     {
-      src: "/Assets/instagram.png",
+      src: "/Assets/footer/social/instagram.png",
       link: "/https://www.instagram.com/",
       width: 19,
       height: 19,
     },
     {
-      src: "/Assets/youtube.svg",
+      src: "/Assets/footer/social/youtube.svg",
       link: "https://www.youtube.com/",
       width: 19,
       height: 19,
     },
     {
-      src: "/Assets/linkedin.png",
+      src: "/Assets/footer/social/linkedin.png",
       link: "https://www.linkedin.com/",
       width: 19,
       height: 19,
     },
     {
-      src: "/Assets/facebook.png",
+      src: "/Assets/footer/social/facebook.png",
       link: "https://www.facebook.com/",
       width: 9,
       height: 18,
@@ -357,7 +358,7 @@ function App() {
         userIcon={userIcon}
         cartIcon={cartIcon}
       />
-      <EmblaCarousel slides={slides} options={OPTIONS} />
+      <BannerCarousel slides={slides} options={OPTIONS} />
       <BenefitsSlider
         secondaryBenefits={secondaryBenefits}
         sliderItems={sliderItems}
@@ -367,7 +368,7 @@ function App() {
       <CategoriesProduct categories={categorieTitle} products={product} />
       <CategoriesNavigation categories={categorieNav} />
       <HotspotGallery
-        backgroundImage="/Assets/CatsPlayingHouse.png"
+        backgroundImage={hotSpotGalleryBackground}
         hotspotItem={hotspotItems}
       />
       <VideoWithText {...video[0]} />
