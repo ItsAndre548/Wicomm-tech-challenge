@@ -1,0 +1,242 @@
+.heroSlider {
+  --slide-size: 100%;
+  position: relative;
+  --slide-spacing: 0;
+  margin: 83px auto;
+  width: 100%;
+  max-width: 1234px;
+}
+
+.heroSlider__header {
+  display: flex;
+  gap: 123px;
+  position: absolute;
+  right: 225px;
+  z-index: 5;
+  top: -6px;
+}
+
+.heroSlider__header a {
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 14px;
+  background-color: #efefef;
+  color: black;
+  border-radius: 9px;
+  padding: 8px 16px 8px 16px;
+}
+.heroSlider__header a:first-child {
+  font-weight: 700;
+    font-size: 20px;
+}
+
+
+.heroSlider__viewport {
+  overflow: hidden;
+}
+
+
+.heroSlider__container {
+  display: flex;
+}
+
+
+.heroSlider__slide {
+  position: relative;
+  flex: 0 0 var(--slide-size);
+  height: 764px;
+}
+
+
+
+
+
+/* Conteúdo do slide */
+.hero__slide-content {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  align-items: start;
+  position: relative;
+  min-height: 764px;
+}
+
+/* Lado esquerdo */
+.embla__slide-left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.mainTitleBackground {
+  width: 483px;
+  height: 210px;
+  margin-left: 127px;
+  padding: 48px 53px;
+  background-color: #4da1b1;
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+
+}
+
+.mainTitleBackground > div {
+  position: absolute;
+  text-align: right;
+  line-height: 1.1;
+}
+
+
+
+.heroSlider__slide-left-image {
+  position: absolute;
+  width: 360px;
+  height: 469px;
+  top: 78px;
+  left: 0px;
+  z-index: 5;
+}
+
+.heroSliderText_container {
+  position: absolute;
+  top: 274px !important; 
+  left: 241px;
+  width: 338px;
+}
+/* Container do texto no meio */
+.heroSliderText_container div {
+  position: relative;
+  max-width: 338px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.6;
+  position: relative;
+  z-index: 2;
+  align-self: center;
+  flex-shrink: 0;
+}
+
+.heroSliderText_container img {
+  position: absolute;
+  top: -188px;
+  left: -103px;
+  z-index: -1;
+}
+
+.hero__slide-paragraph {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333;
+}
+
+.embla__slide-link {
+  display: inline-block;
+  border: 1px solid black;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 29px;
+  padding: 12px 56px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.embla__slide-link:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Imagem direita */
+.embla__slide-right-image {
+  position: absolute;
+  width: 465px;
+  height: 579px;
+  right: 0;
+  bottom: 0;
+}
+
+/* Controles do carrossel */
+.embla__controls {
+  /* position: relative; */
+  margin-top: 10px;
+}
+
+.heroSlider__buttons {
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  display: flex;
+  gap: 1rem;
+  z-index: 50;
+}
+
+.carouselcollection__button--prev,
+.carouselcollection__button--next {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: opacity 0.3s ease;
+}
+
+.carouselcollection__button--prev:disabled,
+.carouselcollection__button--next:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.carouselcollection__button--next > svg {
+  transform: rotate(180deg);
+}
+
+
+
+.embla__dot {
+  display: none;
+}
+
+
+.embla__dot--selected {
+  display: none;
+}
+
+.backgroundImage {
+  display: flex;
+  justify-content: end;
+}
+
+.backgroundImage img:nth-child(1) {
+  margin-right: -10px;
+  margin-top: 86px;
+}
+
+.backgroundImage img:nth-child(2) {
+  margin-right: 84px;
+  margin-top: 66px;
+}
+
+.rigtHeroSliderImage {
+  position: relative;
+  align-self: end;
+}
+
+
+.middleImages {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  inset: 0;
+}
+
+.frontTextContainer {
+  position: absolute;
+  max-width: 338px;
+  top: 274px;
+  left: 400px;
+}
