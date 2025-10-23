@@ -51,9 +51,7 @@ header {
     font-family: "Sora", sans-serif;
 }
 
-.navItems > div {
-    width: max-content;
-}
+
 
 .searchInput {
     min-width: 213px;
@@ -100,10 +98,13 @@ header {
 
 .cartContainer {
     max-width: 100%;
-
 }
 
-.cartContainer > button {
+.cartContainer button img {
+    object-fit: cover;
+}
+
+.cartContainer button {
     all: unset;
 }
 
