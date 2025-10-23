@@ -8,34 +8,74 @@ import HeroSlider from "./components/HeroSlider/HeroSlider.jsx";
 import CategoriesNavigation from "./components/CategoriesNavigation/CategoriesNavigation.jsx";
 import HotspotGallery from "./components/hotspot/HotSpotGallery.jsx";
 import VideoWithText from "./components/videoWithText/VideoWithText.jsx";
-import InstagramCarousel from './components/instagramCarousel/InstagramCarousel.jsx'
+import InstagramCarousel from "./components/instagramCarousel/InstagramCarousel.jsx";
 
 function App() {
+  //Header
+
   const headerLogo = "/Assets/HeaderLogo.png";
-  const slides = [
-    { src: "/Assets/banner_01.png", alt: "nossa nova coleção", href: "/new-colection", btnText: "VER COLEÇÃO" },
-    { src: "/Assets/banner_02.png", alt: "gato dormindo", href: "/our-cats" },
-    { src: "/Assets/banner_03.png", alt: "gato no sol", href: "/more-cats" },
-  ];
+
   const navItems = [
     { href: "/blog", label: "blog" },
     { href: "/lookbook", label: "lookbook" },
     { href: "/about", label: "sobre a Gat" },
     { href: "/whishlist", label: "whishlist" },
   ];
-  const footerNavItems = [
-    { href: "/blog", label: "BLOG" },
-    { href: "/lookbook", label: "LOOKBOOK" },
-    { href: "/about", label: "SOBRE A GAT" },
-    { href: "/whishlist", label: "WISHLIST" },
-  ];
+
   const itemsCollection = [
     { src: "/Assets/menu_01.png", collectionName: "Produtos" },
     { src: "/Assets/menu_02.png", collectionName: "Coleções" },
   ];
-  const cartIcon = "/Assets/cart.png";
   const searchIcon = "/Assets/search.svg";
   const userIcon = "/Assets/user.png";
+  const cartIcon = "/Assets/cart.png";
+
+  //main carousel
+
+  const slides = [
+    {
+      src: "/Assets/banner_01.png",
+      alt: "nossa nova coleção",
+      href: "/new-colection",
+      btnText: "VER COLEÇÃO",
+    },
+    { src: "/Assets/banner_02.png", alt: "gato dormindo", href: "/our-cats" },
+    { src: "/Assets/banner_03.png", alt: "gato no sol", href: "/more-cats" },
+  ];
+
+  //carousel beneficts
+
+  const mainBenefit = {
+    number: "10",
+    title: "Benefício Principal",
+    description: "Lorem ipsum dolor sit amet, consectetur.",
+  };
+
+  const secondaryBenefits = [
+    {
+      title: "Benefício Secundário",
+      description: "Lorem ipsum dolor sit amet, consectetur al muactib.",
+    },
+    {
+      title: "Benefício Secundário",
+      description: "Lorem ipsum dolor sit amet, consectetur al muactib.",
+    },
+    {
+      title: "Benefício Secundário",
+      description: "Lorem ipsum dolor sit amet, consectetur al muactib.",
+    },
+  ];
+
+  const sliderItems = [
+    "Benefício Terciário",
+    "Benefício Terciário",
+    "Lisan Al Gaib",
+    "Benefício Terciário",
+    "Benefício Terciário",
+    "Lisan Al Gaib",
+  ];
+
+  //Hero Carousel
 
   const HeroCarousel = [
     {
@@ -72,36 +112,42 @@ function App() {
     },
   ];
 
-  const mainBenefit = {
-    number: "10",
-    title: "Benefício Principal",
-    description: "Lorem ipsum dolor sit amet, consectetur.",
-  };
+  //product gallery
 
-  const secondaryBenefits = [
-    {
-      title: "Benefício Secundário",
-      description: "Lorem ipsum dolor sit amet, consectetur al muactib.",
-    },
-    {
-      title: "Benefício Secundário",
-      description: "Lorem ipsum dolor sit amet, consectetur al muactib.",
-    },
-    {
-      title: "Benefício Secundário",
-      description: "Lorem ipsum dolor sit amet, consectetur al muactib.",
-    },
-  ];
-
-  const sliderItems = [
-    "Benefício Terciário",
-    "Benefício Terciário",
-    "Lisan Al Gaib",
-    "Benefício Terciário",
-    "Benefício Terciário",
-    "Lisan Al Gaib",
-  ];
   const categorieTitle = "<strong>Queri<br>dinho</strong><br>deles";
+
+  const product = [
+    {
+      img: "/Assets/productImage.png",
+      title: "Toca Túnel Módulos",
+      imgHover: "/Assets/ProductHover.png",
+      price: "0000,00",
+      discountPrice: "00,00",
+      discountCoupon: "10%",
+      launch: true,
+    },
+    {
+      img: "/Assets/productImage.png",
+      title: "Toca Túnel Módulos",
+      imgHover: "/Assets/ProductHover.png",
+      price: "0000,00",
+      discountPrice: "00,00",
+      discountCoupon: "10%",
+      launch: true,
+    },
+    {
+      img: "/Assets/productImage.png",
+      title: "Toca Túnel Módulos",
+      imgHover: "/Assets/ProductHover.png",
+      price: "0000,00",
+      discountPrice: "00,00",
+      discountCoupon: "10%",
+      launch: true,
+    },
+  ];
+
+  //categorie Navigation
+
   const categorieNav = [
     {
       name: "CLÁSSICO",
@@ -133,92 +179,8 @@ function App() {
     },
   ];
 
-  const product = [
-    {
-      img: "/Assets/productImage.png",
-      title: "Toca Túnel Módulos",
-      imgHover: "/Assets/ProductHover.png",
-      price: "0000,00",
-      discountPrice: "00,00",
-      discountCoupon: "10%",
-      launch: true,
-    },
-    {
-      img: "/Assets/productImage.png",
-      title: "Toca Túnel Módulos",
-      imgHover: "/Assets/ProductHover.png",
-      price: "0000,00",
-      discountPrice: "00,00",
-      discountCoupon: "10%",
-      launch: true,
-    },
-    {
-      img: "/Assets/productImage.png",
-      title: "Toca Túnel Módulos",
-      imgHover: "/Assets/ProductHover.png",
-      price: "0000,00",
-      discountPrice: "00,00",
-      discountCoupon: "10%",
-      launch: true,
-    },
-  ];
-  const paymentsIcons = [
-    { src: "/Assets/payment/americanexpress.png" },
-    { src: "/Assets/payment/discover.png" },
-    { src: "/Assets/payment/visa.png" },
-    { src: "/Assets/payment/mastercard.png" },
-    { src: "/Assets/payment/elo.png" },
-    { src: "/Assets/payment/pix.png" },
-    { src: "/Assets/payment/hipercard.png" },
-  ];
-  const securityIcons = [
-    {
-      src: "/Assets/empresaBcertificada.png",
-      windth: 68,
-      height: 100,
-    },
-    {
-      src: "/Assets/opinioesverdadeiras.png",
-      windth: 68,
-      height: 75,
-    },
-    { src: "/Assets/encryption.png", windth: 110, height: 46 },
-  ];
-  const Socials = [
-    {
-      src: "/Assets/instagram.png",
-      link: "/https://www.instagram.com/",
-      width: 19,
-      height: 19,
-    },
-    {
-      src: "/Assets/youtube.svg",
-      link: "https://www.youtube.com/",
-      width: 19,
-      height: 19,
-    },
-    {
-      src: "/Assets/linkedin.png",
-      link: "https://www.linkedin.com/",
-      width: 19,
-      height: 19,
-    },
-    {
-      src: "/Assets/facebook.png",
-      link: "https://www.facebook.com/",
-      width: 9,
-      height: 18,
-    },
-  ];
+  //HOTSPOTGALLERY
 
-  const FAQ = [
-    { label: "FAQ", link: "/faq" },
-    { label: "Sobre nossos produtos", link: "/prazos-de-entrega" },
-    { label: "Trocas e devoluções", link: "/trocas-e-devolucoes" },
-    { label: "Entregas", link: "/entregas", width: 68 },
-    { label: "Indique e ganhe", link: "/indique-e-ganhe" },
-    { label: "Garantias", link: "/garantias" },
-  ];
   const hotspotItems = [
     {
       top: "47%",
@@ -271,9 +233,9 @@ function App() {
       linkText: "VER SELEÇÃO",
     },
   ];
-  const paymentTitle = "FORMAS DE PAGAMENTO";
-  const logoFooter = "/Assets/logofooter.png";
-  const certificate = "CERTIFICADOS E SEGURANÇA";
+
+  //video with text
+
   const video = [
     {
       videoSrc: "/Assets/catVideo.mp4",
@@ -285,25 +247,104 @@ function App() {
       thumbnailUrl: "/Assets/catTumbnail.jpg",
     },
   ];
-  const contactNumber = "(51) 9999-9999";
-  const contactEmail = "ajuda@gat.com.br";
-  const formImage = "/Assets/formImage.png";
+
+  //instagram slides
+
   const instagramSlides = [
     { src: "/Assets/Group36.png" },
     { src: "/Assets/Group37.png" },
     { src: "/Assets/Group38.png" },
     { src: "/Assets/Group39.png" },
     { src: "/Assets/Group40.png" },
-    { src: "/Assets/Group40.png" },
-    { src: "/Assets/Group40.png" },
-    { src: "/Assets/Group40.png" },
-    { src: "/Assets/Group40.png" },
-    { src: "/Assets/Group40.png" },
-    { src: "/Assets/Group40.png" },
-    { src: "/Assets/Group40.png" },
-  ]
-  const upperParagraph = "Faça parte da comunidade de gatunos que amam design e papelão compartilhando a hashtag: "
-  const upperTitle = "#AdoradoresDePapelão"
+  ];
+  const upperParagraph =
+    "Faça parte da comunidade de gatunos que amam design e papelão compartilhando a hashtag: ";
+  const upperTitle = "#AdoradoresDePapelão";
+
+  //FORM IMAGE
+
+  const formImage = "/Assets/formImage.png";
+
+  //footer
+  const logoFooter = "/Assets/logofooter.png";
+
+  //footer navigaton
+  const footerNavItems = [
+    { href: "/blog", label: "BLOG" },
+    { href: "/lookbook", label: "LOOKBOOK" },
+    { href: "/about", label: "SOBRE A GAT" },
+    { href: "/whishlist", label: "WISHLIST" },
+  ];
+
+  //footer payment method
+  const paymentsIcons = [
+    { src: "/Assets/payment/americanexpress.png" },
+    { src: "/Assets/payment/discover.png" },
+    { src: "/Assets/payment/visa.png" },
+    { src: "/Assets/payment/mastercard.png" },
+    { src: "/Assets/payment/elo.png" },
+    { src: "/Assets/payment/pix.png" },
+    { src: "/Assets/payment/hipercard.png" },
+  ];
+  const paymentTitle = "FORMAS DE PAGAMENTO";
+
+  //footer certificates
+  const certificate = "CERTIFICADOS E SEGURANÇA";
+  const securityIcons = [
+    {
+      src: "/Assets/empresaBcertificada.png",
+      windth: 68,
+      height: 100,
+    },
+    {
+      src: "/Assets/opinioesverdadeiras.png",
+      windth: 68,
+      height: 75,
+    },
+    { src: "/Assets/encryption.png", windth: 110, height: 46 },
+  ];
+
+  //FAQ
+  const FAQ = [
+    { label: "FAQ", link: "/faq" },
+    { label: "Sobre nossos produtos", link: "/prazos-de-entrega" },
+    { label: "Trocas e devoluções", link: "/trocas-e-devolucoes" },
+    { label: "Entregas", link: "/entregas", width: 68 },
+    { label: "Indique e ganhe", link: "/indique-e-ganhe" },
+    { label: "Garantias", link: "/garantias" },
+  ];
+
+  //footer contact
+  const contactNumber = "(51) 9999-9999";
+  const contactEmail = "ajuda@gat.com.br";
+
+  //footer social medias
+  const Socials = [
+    {
+      src: "/Assets/instagram.png",
+      link: "/https://www.instagram.com/",
+      width: 19,
+      height: 19,
+    },
+    {
+      src: "/Assets/youtube.svg",
+      link: "https://www.youtube.com/",
+      width: 19,
+      height: 19,
+    },
+    {
+      src: "/Assets/linkedin.png",
+      link: "https://www.linkedin.com/",
+      width: 19,
+      height: 19,
+    },
+    {
+      src: "/Assets/facebook.png",
+      link: "https://www.facebook.com/",
+      width: 9,
+      height: 18,
+    },
+  ];
 
   const OPTIONS = { loop: true };
   return (
@@ -325,12 +366,17 @@ function App() {
       <HeroSlider heroItems={HeroCarousel} options={OPTIONS} />
       <CategoriesProduct categories={categorieTitle} products={product} />
       <CategoriesNavigation categories={categorieNav} />
-    <HotspotGallery
+      <HotspotGallery
         backgroundImage="/Assets/CatsPlayingHouse.png"
         hotspotItem={hotspotItems}
       />
       <VideoWithText {...video[0]} />
-      <InstagramCarousel upperParagraph={upperParagraph} upperTitle={upperTitle} slides={instagramSlides} options={OPTIONS} />
+      <InstagramCarousel
+        upperParagraph={upperParagraph}
+        upperTitle={upperTitle}
+        slides={instagramSlides}
+        options={OPTIONS}
+      />
       <Footer
         formImage={formImage}
         logoFooter={logoFooter}
