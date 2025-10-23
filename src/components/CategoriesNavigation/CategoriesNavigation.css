@@ -1,0 +1,35 @@
+.categorieNavigation {
+    display: flex;
+    gap: 17px;
+    margin: 0 auto;
+    max-width: 1240px;
+    justify-content: space-around;
+}
+
+.categorieNav {
+    border: 1px solid black;
+    border-radius: 29px;
+    padding: 2px 45px;
+
+}
+
+.categoriesNavigationTitle {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin: 34px 0;
+    letter-spacing: 8px;
+}
+
+.categorieNavLink {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.categorieNav:hover {
+    background-color: white;
+}
