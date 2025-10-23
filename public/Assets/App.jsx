@@ -1,14 +1,14 @@
-import "./App.css";
-import BenefitsSlider from "./components/benefits-slider/BenefitsSlider";
-import Footer from "./components/footer/Footer.jsx";
-import Header from "./components/header/Header";
-import CategoriesProduct from "./components/products/CategoriesProduct";
-import EmblaCarousel from "./components/Carousel/EmblaCarousel";
-import HeroSlider from "./components/HeroSlider/HeroSlider";
-import CategoriesNavigation from "./components/CategoriesNavigation/CategoriesNavigation";
-import HotspotGallery from "./components/hotspot/HotSpotGallery";
-import VideoWithText from "./components/videoWithText/VideoWithText";
-import InstagramCarousel from './components/instagramCarousel/InstagramCarousel.jsx'
+import "../../src/App.css";
+import BenefitsSlider from "../../src/components/benefits-slider/BenefitsSlider.jsx";
+import Footer from "../../src/components/footer/Footer.jsx";
+import Header from "../../src/components/header/Header.jsx";
+import CategoriesProduct from "../../src/components/products/CategoriesProduct.jsx";
+import EmblaCarousel from "../../src/components/Carousel/EmblaCarousel.jsx";
+import HeroSlider from "../../src/components/HeroSlider/HeroSlider.jsx";
+import CategoriesNavigation from "../../src/components/CategoriesNavigation/CategoriesNavigation.jsx";
+import HotspotGallery from "../../src/components/hotspot/HotSpotGallery.jsx";
+import VideoWithText from "../../src/components/videoWithText/VideoWithText.jsx";
+import InstagramCarousel from '../../src/components/instagramCarousel/InstagramCarousel.jsx'
 
 function App() {
   const headerLogo = "/Assets/HeaderLogo.png";
@@ -289,18 +289,18 @@ function App() {
   const contactEmail = "ajuda@gat.com.br";
   const formImage = "/Assets/formImage.png";
   const instagramSlides = [
-    { src: "/Assets/instagram/group36.png" },
-    { src: "/Assets/instagram/group37.png" },
-    { src: "/Assets/instagram/group38.png" },
-    { src: "/Assets/instagram/group39.png" },
-    { src: "/Assets/instagram/group40.png" },
-    { src: "/Assets/instagram/group40.png" },
-    { src: "/Assets/instagram/group40.png" },
-    { src: "/Assets/instagram/group40.png" },
-    { src: "/Assets/instagram/group40.png" },
-    { src: "/Assets/instagram/group40.png" },
-    { src: "/Assets/instagram/group40.png" },
-    { src: "/Assets/instagram/group40.png" },
+    { src: "/Assets/group36.png" },
+    { src: "/Assets/group37.png" },
+    { src: "/Assets/group38.png" },
+    { src: "/Assets/group39.png" },
+    { src: "/Assets/group40.png" },
+    { src: "/Assets/group40.png" },
+    { src: "/Assets/group40.png" },
+    { src: "/Assets/group40.png" },
+    { src: "/Assets/group40.png" },
+    { src: "/Assets/group40.png" },
+    { src: "/Assets/group40.png" },
+    { src: "/Assets/group40.png" },
   ]
 
   const OPTIONS = { loop: true };
