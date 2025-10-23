@@ -2,6 +2,9 @@
   text-align: center;
 }
 
+* {
+    box-sizing: border-box;
+}
 
 .App-logo {
   height: 40vmin;
@@ -36,4 +39,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.btn-primary:hover {
+  background-color: #fff;
 }
