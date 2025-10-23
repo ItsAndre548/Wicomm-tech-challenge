@@ -302,6 +302,8 @@ function App() {
     { src: "/Assets/Group40.png" },
     { src: "/Assets/Group40.png" },
   ]
+  const upperParagraph = "Faça parte da comunidade de gatunos que amam design e papelão compartilhando a hashtag: "
+  const upperTitle = "#AdoradoresDePapelão"
 
   const OPTIONS = { loop: true };
   return (
@@ -328,7 +330,7 @@ function App() {
         hotspotItem={hotspotItems}
       />
       <VideoWithText {...video[0]} />
-      <InstagramCarousel slides={instagramSlides} options={OPTIONS} />
+      <InstagramCarousel upperParagraph={upperParagraph} upperTitle={upperTitle} slides={instagramSlides} options={OPTIONS} />
       <Footer
         formImage={formImage}
         logoFooter={logoFooter}
