@@ -7,12 +7,9 @@ export default function FooterSecurity({ certificateTitle, securityIcons }) {
       {securityIcons.length > 0 ? (
         <div className="securityIconsContainer">
           {securityIcons.map((icon, index) => (
-            <a
-              href={icon.link}
+            <span
               className="securityIcon"
               key={index}
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <img
                 src={icon.src}
@@ -20,7 +17,7 @@ export default function FooterSecurity({ certificateTitle, securityIcons }) {
                 height={icon.height}
                 alt={icon.src}
               />
-            </a>
+            </span>
           ))}
         </div>
       ) : (

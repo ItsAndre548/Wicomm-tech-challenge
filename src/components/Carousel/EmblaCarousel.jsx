@@ -28,17 +28,16 @@ const EmblaCarousel = (props) => {
         <div className="embla__container">
           {slides.map((slide, index) => (
             <div className="embla__slide" key={index}>
-              <a href={slide.href}>
                 <img
                   src={slide.src}
                   className="img-carousel"
                   width={1779}
                   height={559}
+                  alt={slide.alt}
                 />
-              </a>
               {slide.btnText && (
                 <div className="ctaCarousel">
-                  <a className="ctaCarouselBTN">{slide.btnText}</a>
+                  <a href={slide.href} className="ctaCarouselBTN">{slide.btnText}</a>
                 </div>
               )}
             </div>

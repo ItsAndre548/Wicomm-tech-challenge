@@ -13,9 +13,9 @@ import InstagramCarousel from './components/instagramCarousel/InstagramCarousel.
 function App() {
   const headerLogo = "/Assets/HeaderLogo.png";
   const slides = [
-    { src: "/Assets/banner_01.png", href: "/new-colection", btnText: "VER COLEÇÃO" },
-    { src: "/Assets/banner_02.png", href: "/our-cats" },
-    { src: "/Assets/banner_03.png", href: "/more-cats" },
+    { src: "/Assets/banner_01.png", alt: "nossa nova coleção", href: "/new-colection", btnText: "VER COLEÇÃO" },
+    { src: "/Assets/banner_02.png", alt: "gato dormindo", href: "/our-cats" },
+    { src: "/Assets/banner_03.png", alt: "gato no sol", href: "/more-cats" },
   ];
   const navItems = [
     { href: "/blog", label: "blog" },
@@ -187,25 +187,25 @@ function App() {
   const Socials = [
     {
       src: "/Assets/instagram.png",
-      link: "/instagram",
+      link: "/https://www.instagram.com/",
       width: 19,
       height: 19,
     },
     {
       src: "/Assets/youtube.svg",
-      link: "/youtube",
+      link: "https://www.youtube.com/",
       width: 19,
       height: 19,
     },
     {
       src: "/Assets/linkedin.png",
-      link: "/linkedin",
+      link: "https://www.linkedin.com/",
       width: 19,
       height: 19,
     },
     {
       src: "/Assets/facebook.png",
-      link: "/facebook",
+      link: "https://www.facebook.com/",
       width: 9,
       height: 18,
     },
