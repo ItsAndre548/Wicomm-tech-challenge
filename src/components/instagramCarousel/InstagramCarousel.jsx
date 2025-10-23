@@ -21,10 +21,10 @@ const InstagramCarousel = (props) => {
   return (
     <section className="socialCarousel">
       <div className="socialCarousel__viewport" ref={emblaRef}>
-        <p class="socialCarouselParagraph">
+        <p className="socialCarouselParagraph">
           {upperParagraph}
         </p>
-        <h2 class="socialCarouselTitle">{upperTitle}</h2>
+        <h2 className="socialCarouselTitle">{upperTitle}</h2>
         <div className="socialCarousel__container">
           {slides.map((slide, index) => (
             <div className="socialCarousel__slide" key={index}>

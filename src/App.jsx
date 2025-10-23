@@ -39,8 +39,16 @@ function App() {
       href: "/new-colection",
       btnText: "VER COLEÇÃO",
     },
-    { src: "/Assets/banner/banner_02.png", alt: "gato dormindo", href: "/our-cats" },
-    { src: "/Assets/banner/banner_03.png", alt: "gato no sol", href: "/more-cats" },
+    {
+      src: "/Assets/banner/banner_02.png",
+      alt: "gato dormindo",
+      href: "/our-cats",
+    },
+    {
+      src: "/Assets/banner/banner_03.png",
+      alt: "gato no sol",
+      href: "/more-cats",
+    },
   ];
 
   //carousel beneficts
@@ -146,6 +154,7 @@ function App() {
     },
   ];
 
+
   //categorie Navigation
 
   const categorieNav = [
@@ -180,7 +189,7 @@ function App() {
   ];
 
   //HOTSPOTGALLERY
-  const hotSpotGalleryBackground = "/Assets/CatsPlayingHouse.png"
+  const hotSpotGalleryBackground = "/Assets/CatsPlayingHouse.png";
 
   const hotspotItems = [
     {
@@ -302,7 +311,11 @@ function App() {
       windth: 68,
       height: 75,
     },
-    { src: "/Assets/footer/certificate/encryption.png", windth: 110, height: 46 },
+    {
+      src: "/Assets/footer/certificate/encryption.png",
+      windth: 110,
+      height: 46,
+    },
   ];
 
   //FAQ
@@ -365,7 +378,10 @@ function App() {
         mainBenefit={mainBenefit}
       />
       <HeroSlider heroItems={HeroCarousel} options={OPTIONS} />
-      <CategoriesProduct categories={categorieTitle} products={product} />
+      <CategoriesProduct
+        categories={categorieTitle}
+        products={product}
+      />
       <CategoriesNavigation categories={categorieNav} />
       <HotspotGallery
         backgroundImage={hotSpotGalleryBackground}
