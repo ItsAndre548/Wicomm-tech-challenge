@@ -38,10 +38,11 @@ header {
     text-decoration: none;
     align-items: center;
     padding-right: 10px;
-    /* line-height: 100%; */
-    /* letter-spacing: 0%; */
-
 }
+
+
+
+
 .navItem {
     color: white;
     outline: none;

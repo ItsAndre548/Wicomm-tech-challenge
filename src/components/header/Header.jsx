@@ -28,7 +28,7 @@ export default function Header({
         <Collections itemsCollection={itemsCollection} />
       </div>
       <container class="rightContainer">
-        <NavHeader navItems={navItems} />
+        <NavHeader navItems={navItems}  contexto="header" />
         <HeaderSearch searchIcon={searchIcon} />
         <UserContainer userIcon={userIcon} />
         <CartButton cartIcon={cartIcon} />
