@@ -14,8 +14,8 @@ const BenefitsSlider = ({ secondaryBenefits, sliderItems, mainBenefit }) => {
           </div>
         </div>
 
-      <div class="secondaryBenefictsFather">
-        <container class="secondaryBenefictsContainer">
+      <div className="secondaryBenefictsFather">
+        <div className="secondaryBenefictsContainer">
         {secondaryBenefits.map((benefit, index) => (
             <div key={index} className="secondary-benefit">
               <div className="benefit-icon">
@@ -27,7 +27,7 @@ const BenefitsSlider = ({ secondaryBenefits, sliderItems, mainBenefit }) => {
               </div>
             </div>
           ))}
-        </container>
+        </div>
         <div className="benefits-container">
           <div className="benefits-track">
             {[...sliderItems, ...sliderItems].map((item, index) => (

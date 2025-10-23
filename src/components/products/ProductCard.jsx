@@ -3,11 +3,11 @@ import AddToCartButton from "../AddToCartButton";
 export default function ProductCard({ product }) {
   return (
     <div className="product-card">
-     <div class="upperCard">
+     <div className="upperCard">
      {product.discountCoupon ? (
-        <p class="discountCard"> <strong>{product.discountCoupon}</strong> OFF</p>
+        <p className="discountCard"> <strong>{product.discountCoupon}</strong> OFF</p>
       ) : null}
-      {product.launch ? <p class="launch">LANÇAMENTO</p> : null}
+      {product.launch ? <p className="launch">LANÇAMENTO</p> : null}
 
      </div>
       <div className="image-container">
@@ -19,7 +19,7 @@ export default function ProductCard({ product }) {
         />
       </div>
 
-      <div class="text-container">
+      <div className="text-container">
         <p>{product.title}</p>
         <svg
           width="62"
@@ -58,7 +58,7 @@ export default function ProductCard({ product }) {
           />
         </svg>
       </div>
-      <div class="price-container">
+      <div className="price-container">
         <p>{product.price}</p>
         <p>{product.discountPrice}</p>
       </div>

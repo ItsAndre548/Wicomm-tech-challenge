@@ -22,14 +22,14 @@ export default function NewsletterForm({ formImage }) {
   };
 
   return (
-    <section class="newsletterSection">
+    <section className="newsletterSection">
       <div>
-        <img src={formImage} width={505} height={347} alt="" srcset="" />
+        <img src={formImage} width={505} height={347} alt="" />
       </div>
-      <div class="newsletterTitleContainer">
-        <p class="newsletterTitle">NEWSLETTER</p>
+      <div className="newsletterTitleContainer">
+        <p className="newsletterTitle">NEWSLETTER</p>
       </div>
-      <div class="newsletterText">
+      <div className="newsletterText">
         <p>
           <strong>CADASTRE-SE E GANHE 10% OFF NA SUA PRIMEIRA COMPRA</strong>
         </p>
@@ -41,12 +41,12 @@ export default function NewsletterForm({ formImage }) {
         aria-labelledby="newsletter-title"
         noValidate
       >
-        <div class="fields">
+        <div className="fields">
           <div className="field">
             <label htmlFor="subscriber-name"></label>
             <input
               id="subscriber-name"
-              class="form-label"
+              className="form-label"
               name="name"
               type="text"
               placeholder="NOME DO SEU PET"
@@ -61,7 +61,7 @@ export default function NewsletterForm({ formImage }) {
             <label htmlFor="subscriber-email"></label>
             <input
               id="subscriber-email"
-              class="form-label"
+              className="form-label"
               name="email"
               type="email"
               placeholder="SEU EMAIL"
@@ -73,7 +73,7 @@ export default function NewsletterForm({ formImage }) {
           </div>
         </div>
 
-        <button type="submit" class="formBTN">
+        <button type="submit" className="formBTN">
           CADASTRAR
         </button>
 

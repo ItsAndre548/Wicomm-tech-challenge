@@ -23,8 +23,8 @@ export default function Footer({
   return (
     <footer>
       <NewsLetter formImage={formImage} />
-      <div class="parent">
-        <div class="div1">
+      <div className="parent">
+        <div className="div1">
           <img
             src={logoFooter}
             width={75}
@@ -32,22 +32,22 @@ export default function Footer({
             alt="Footer Logo"
           />
         </div>
-        <div class="div2">
+        <div className="div2">
           <NavFooter footerNavItems={footerNavItems} />
-          <div class="certificateandpayments">
+          <div className="certificateandpayments">
               <FooterPaymentMethod paymentTitle={paymentTitle} icons={paymentsIcons} />
               <FooterSecurity certificateTitle={certificate} securityIcons={securityIcons} />
           </div>
         </div>
-        <div class="div3">
+        <div className="div3">
           <FooterInfo faq={faq} />
         </div>
-        <div class="div4">
+        <div className="div4">
             <FooterContact contactNumber={contactNumber} contactemail={contactEmail} />
              <FooterIcons icons={Socials} />
         </div>
       </div>
-      <div class="copyrightBar">
+      <div className="copyrightBar">
         <p>© 2024, GAT. TODOS OS DIREITOS RESERVADOS.</p>
         <p>
           GAT LTDA. | R. Ondina Carvalheira Peixoto, 300 - Chácaras Palmeiras |

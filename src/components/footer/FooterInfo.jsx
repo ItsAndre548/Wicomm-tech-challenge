@@ -1,11 +1,11 @@
 export default function FooterInfo({ faq }) {
       return (
-    <div class="faq">
-      <p class="footerTitle margin0">AJUDA</p>
+    <div className="faq">
+      <p className="footerTitle margin0">AJUDA</p>
       {faq.length > 0 ? (
-        <div class="faqContainer">
-          {faq.map((item) => (
-            <a href={item.link} target="_blank" rel="noopener noreferrer">
+        <div className="faqContainer" >
+          {faq.map((item, index) => (
+            <a href={item.link} key={index} target="_blank" rel="noopener noreferrer">
               {item.label}
             </a>
           ))}

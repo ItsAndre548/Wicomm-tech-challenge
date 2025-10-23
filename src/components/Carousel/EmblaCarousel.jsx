@@ -1,37 +1,46 @@
-import React from 'react'
-import { DotButton, useDotButton } from './EmblaCarouselDotButton'
+import React from "react";
+import { DotButton, useDotButton } from "./EmblaCarouselDotButton";
 import {
   PrevButton,
   NextButton,
-  usePrevNextButtons
-} from './EmblaCarouselArrowButtons'
-import useEmblaCarousel from 'embla-carousel-react'
-import './Embla.css'
+  usePrevNextButtons,
+} from "./EmblaCarouselArrowButtons";
+import useEmblaCarousel from "embla-carousel-react";
+import "./Embla.css";
 
 const EmblaCarousel = (props) => {
-  const { slides, options } = props
-  const [emblaRef, emblaApi] = useEmblaCarousel(options)
+  const { slides, options } = props;
+  const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
-    useDotButton(emblaApi)
+    useDotButton(emblaApi);
 
   const {
     prevBtnDisabled,
     nextBtnDisabled,
     onPrevButtonClick,
-    onNextButtonClick
-  } = usePrevNextButtons(emblaApi)
+    onNextButtonClick,
+  } = usePrevNextButtons(emblaApi);
 
   return (
     <section className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((index) => (
+          {slides.map((slide, index) => (
             <div className="embla__slide" key={index}>
-              <a href={index.href}>
-                <img src={index.src} class="img-carousel" width={1779} height={559} />
+              <a href={slide.href}>
+                <img
+                  src={slide.src}
+                  className="img-carousel"
+                  width={1779}
+                  height={559}
+                />
               </a>
-              <div class="ctaCarousel"><a class="ctaCarouselBTN">{index.btnText}</a></div>
+              {slide.btnText && (
+                <div className="ctaCarousel">
+                  <a className="ctaCarouselBTN">{slide.btnText}</a>
+                </div>
+              )}
             </div>
           ))}
         </div>
@@ -48,15 +57,15 @@ const EmblaCarousel = (props) => {
             <DotButton
               key={index}
               onClick={() => onDotButtonClick(index)}
-              className={'embla__dot'.concat(
-                index === selectedIndex ? ' embla__dot--selected' : ''
+              className={"embla__dot".concat(
+                index === selectedIndex ? " embla__dot--selected" : ""
               )}
             />
           ))}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default EmblaCarousel
+export default EmblaCarousel;

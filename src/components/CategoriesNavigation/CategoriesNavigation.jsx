@@ -2,18 +2,18 @@ import './CategoriesNavigation.css'
 
 export default function CategoriesNavigation({ categories }) {
     return(
-        <section class="categorieNavigationSection">
-            <p class="categoriesNavigationTitle">NAVEGUE PELAS CATEGORIAS</p>
-            <div class="categorieNavigation">
-                {categories.map((categorie)=>
-            <div class="categorieNav">
-                <a class="categorieNavLink" href={categorie.link}>
+        <section className="categorieNavigationSection">
+            <p className="categoriesNavigationTitle">NAVEGUE PELAS CATEGORIAS</p>
+            <div className="categorieNavigation">
+                {categories.map((categorie, index)=>
+            <div className="categorieNav" key={index}>
+                <a className="categorieNavLink" href={categorie.link}>
                     <img src={categorie.icon} width={categorie.width} height={categorie.height} alt={categorie.name} />
                 <p>{categorie.name}</p>
                 </a>
             </div>
             )}
-            <a class="categorieNav categorieNavLink" href="#">VER TUDO</a>
+            <a className="categorieNav categorieNavLink" href="#">VER TUDO</a>
             </div>
         </section>
     )

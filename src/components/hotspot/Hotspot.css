@@ -8,7 +8,6 @@
 .hotspotItem {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 27px;
     z-index: 1;
     
@@ -27,36 +26,6 @@
 
 
 
-.hotspotTextContainer {
-    background-color: white;
-    border: 1px solid black;
-    width: 282px;
-    padding: 33px 18px 22px 32px;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 27px;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease-in-out;
-    z-index: 10;
-}
-
-.hotspotTextContainer p {
-    margin: 0;
-}
-
-.hotspotTextContainer a {
-    text-decoration: none;
-    color: black;
-    border: 1px solid black;
-    padding: 10px 24px;
-    border-radius: 29px;
-    text-align: center;
-    max-width: 182px;
-    width: 100%;
-    align-self: start;
-}
 
 
 
@@ -84,10 +53,46 @@
     background-color: white;
     border-radius: 50%;
     font-size: 20px;
-        cursor: pointer;
+    cursor: pointer;
 
 }
-.hotspotItem span:hover + .hotspotTextContainer,
-.hotspotItem span:hover ~ .hotspotTextContainer {
+
+.hotspotTextContainer {
+    background-color: white;
+    border: 1px solid black;
+    width: 282px;
+    padding: 33px 18px 22px 32px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    opacity: 0;
+    display: none;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 10;
+    position: relative;
+}
+
+.hotspotContainer:hover .hotspotTextContainer  {
     opacity: 1;
+    display: block;
+    z-index: 50;
+}
+
+
+.hotspotTextContainer p {
+    margin: 0;
+}
+
+.hotspotTextContainer a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 24px;
+    border-radius: 29px;
+    text-align: center;
+    max-width: 182px;
+    width: 100%;
+    align-self: start;
 }

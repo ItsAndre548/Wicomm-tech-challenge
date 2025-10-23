@@ -15,11 +15,11 @@ export default function Header({
 }) {
   return (
     <header>
-      <div class="leftContainer">
-        <div class="logoBar">
+      <div className="leftContainer">
+        <div className="logoBar">
           <img
             src={headerLogo}
-            class="imgLogoBar"
+            className="imgLogoBar"
             width={85}
             height={40}
             alt="Wicomm cat icon"
@@ -27,12 +27,12 @@ export default function Header({
         </div>
         <Collections itemsCollection={itemsCollection} />
       </div>
-      <container class="rightContainer">
+      <div className="rightContainer">
         <NavHeader navItems={navItems}  contexto="header" />
         <HeaderSearch searchIcon={searchIcon} />
         <UserContainer userIcon={userIcon} />
         <CartButton cartIcon={cartIcon} />
-      </container>
+      </div>
     </header>
   );
 }

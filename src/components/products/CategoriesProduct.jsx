@@ -4,18 +4,18 @@ import "./ProductCard.css";
 
 export default function CategoriesProduct({ categories, products }) {
   return (
-    <section class="categoriesProduct">
-      <div class="categoryProduct">
-        <div class="categorie">
-          <div class="sphere"></div>
+    <section className="categoriesProduct">
+      <div className="categoryProduct">
+        <div className="categorie">
+          <div className="sphere"></div>
           <div dangerouslySetInnerHTML={{ __html: categories }} />
-          <div class="categoriesButton">
+          <div className="categoriesButton">
             <button>VER TUDO</button>
           </div>
         </div>
-        <div class="categoriesProductContainer">
-          {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
+        <div className="categoriesProductContainer">
+          {products.map((product, index) => (
+            <ProductCard key={index} product={product} />
           ))}
         </div>
       </div>

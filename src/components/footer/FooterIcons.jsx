@@ -2,14 +2,13 @@ import "./Footer.css";
 
 export default function FooterIcons({ icons }) {
   return (
-    <div class="social">
-      <p class="footerTitle">REDES SOCIAIS</p>
+    <div className="social">
+      <p className="footerTitle">REDES SOCIAIS</p>
       {icons.length > 0 ? (
-        <div class="socialIcons">
+        <div className="socialIcons">
           {icons.map((icon, index) => (
-            <a href={icon.link} target="_blank" rel="noopener noreferrer">
+            <a href={icon.link} key={index} target="_blank" rel="noopener noreferrer">
               <img
-                key={index}
                 src={icon.src}
                 width={icon.width}
                 height={icon.height}

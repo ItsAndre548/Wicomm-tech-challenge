@@ -3,10 +3,10 @@ import "./Header.css";
 export default function Collections({ itemsCollection }) {
   return (
     <>
-      <div class="collectionsHeader">
-        {itemsCollection.map((item) => {
+      <div className="collectionsHeader">
+        {itemsCollection.map((item, index) => {
           return (
-            <container class="collectionsContainer">
+            <div key={index} className="collectionsContainer">
               <img
                 src={item.src}
                 width={16}
@@ -14,7 +14,7 @@ export default function Collections({ itemsCollection }) {
                 alt={item.collectionName}
               />
               <p>{item.collectionName}</p>
-            </container>
+            </div>
           );
         })}
       </div>

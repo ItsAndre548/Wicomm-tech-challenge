@@ -12,17 +12,17 @@ export default function VideoWithText({
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <div class="videoWithTextContainer">
-      <div class="videoLeftContainer">
+    <div className="videoWithTextContainer">
+      <div className="videoLeftContainer">
         <div>
-          <div class="redSphere"></div>
-        <div class="videoTitleContainer">
-          <h2 class="videoWithTextTitle">{title}</h2>
+          <div className="redSphere"></div>
+        <div className="videoTitleContainer">
+          <h2 className="videoWithTextTitle">{title}</h2>
           </div>
           </div>
       </div>
-      <div class="videoTextRightContainer">
-        <div class="videoWrapper">
+      <div className="videoTextRightContainer">
+        <div className="videoWrapper">
           <video
             width="505"
             height="284"
@@ -41,13 +41,13 @@ export default function VideoWithText({
             <img
               src="/Assets/videoplayer.svg"
               alt="Play"
-              class="playIcon"
+              className="playIcon"
             />
           )}
         </div>
-        <div class="videoTextContent">
-          <p class="videoWithTextDescription">{description}</p>
-          <a href={link} class="videoWithTextLink">
+        <div className="videoTextContent">
+          <p className="videoWithTextDescription">{description}</p>
+          <a href={link} className="videoWithTextLink">
             {linkText}
           </a>
         </div>

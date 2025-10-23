@@ -21,18 +21,18 @@ export default function HeroSlider({ heroItems, options }) {
     onPrevButtonClick,
     onNextButtonClick,
   } = usePrevNextButtons(emblaApi);
-  console.log('Hotspots:', heroItems.hotspots);
   return (
-    <section class="heroSlider">
-      <div class="heroSlider__header">
+    <section className="heroSlider">
+      <div className="heroSlider__header">
         <a href="/">COLEÇÕES</a>
         <a href="/">VER TODAS</a>
       </div>
-      <div class="heroSlider__viewport" ref={emblaRef}>
-        <div class="heroSlider__container">
+      {/* <Hotspot {...heroItems.hotspotItem} /> */}
+      <div className="heroSlider__viewport" ref={emblaRef}>
+        <div className="heroSlider__container">
           {heroItems.map((item, index) => (
-            <div class="heroSlider__slide" key={index}>
-              <div class="backgroundImage">
+            <div className="heroSlider__slide" key={index}>
+              <div className="backgroundImage">
                 {item.paragraphBGimage ? (
                   <img
                     src={item.paragraphBGimage}
@@ -51,24 +51,24 @@ export default function HeroSlider({ heroItems, options }) {
                 ) : null}
               </div>
 
-              <div class="middleImages">
+              <div className="middleImages">
                 <img
                   src={item.leftImage}
                   alt={item.altLeft}
-                  class="heroSlider__slide-left-image"
+                  className="heroSlider__slide-left-image"
                 />
                 <img
                   src={item.rightImage}
                   alt={item.altRight}
                   className="embla__slide-right-image"
                 />
-                <div class="mainTitleBackground">
+                <div className="mainTitleBackground">
                   <div dangerouslySetInnerHTML={{ __html: item.mainTitle }} />
-                  <div class="heroSliderText_container"></div>
+                  <div className="heroSliderText_container"></div>
                 </div>
               </div>
-              <div class="frontTextContainer">
-                <p class="hero__slide-paragraph">{item.paragraph}</p>
+              <div className="frontTextContainer">
+                <p className="hero__slide-paragraph">{item.paragraph}</p>
                 <a href={item.link} className="embla__slide-link">
                   EXPLORAR
                 </a>
@@ -79,21 +79,21 @@ export default function HeroSlider({ heroItems, options }) {
       </div>
 
       {/* Controles de navegação */}
-      <div class="embla__controls">
-        <div class="heroSlider__buttons">
+      <div className="embla__controls">
+        <div className="heroSlider__buttons">
           <PrevButton
             onClick={onPrevButtonClick}
             disabled={prevBtnDisabled}
-            class="carouselcollection__button--prev"
+            className="carouselcollection__button--prev"
           />
           <NextButton
             onClick={onNextButtonClick}
             disabled={nextBtnDisabled}
-            class="carouselcollection__button--next"
+            className="carouselcollection__button--next"
           />
         </div>
 
-        <div class="embla__dots">
+        <div className="embla__dots">
           {scrollSnaps.map((_, index) => (
             <DotButton
               key={index}

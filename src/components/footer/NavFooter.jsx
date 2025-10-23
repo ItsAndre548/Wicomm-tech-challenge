@@ -1,9 +1,9 @@
 
 export default function NavFooter({ footerNavItems }) {
   return (
-    <nav class="navFooter">
-      {footerNavItems.map((navItem) => (
-          <a href={navItem.href} class="navFooterItem">
+    <nav className="navFooter">
+      {footerNavItems.map((navItem, index) => (
+          <a key={index} href={navItem.href} className="navFooterItem">
             {navItem.label}
           </a>
 

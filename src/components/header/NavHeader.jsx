@@ -1,9 +1,9 @@
 export default function NavHeader({ navItems }) {
   return (
-    <nav class="navItems">
-      {navItems.map((navItem) => (
-        <div key={navItem.index}>
-          <a href={navItem.href} class="navItem">
+    <nav className="navItems">
+      {navItems.map((navItem, index) => (
+        <div key={index}>
+          <a href={navItem.href} className="navItem">
             {navItem.label}
           </a>
         </div>
