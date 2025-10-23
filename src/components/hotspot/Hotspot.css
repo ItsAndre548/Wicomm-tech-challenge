@@ -64,7 +64,7 @@
     padding: 33px 18px 22px 32px;
     margin: 0;
     flex-direction: column;
-    gap: 27px;
+    gap: 10px;
     opacity: 0;
     display: none;
     pointer-events: none;

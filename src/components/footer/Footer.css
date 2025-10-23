@@ -1,3 +1,12 @@
+:root {
+  --footer-color: #373737;
+}
+.footerTitle,
+.navFooter a,
+.faqContainer a {
+  color: var(--footer-color);
+}
+
 .copyrightBar {
     display: flex;
     font-size: 10px;
@@ -22,14 +31,13 @@ footer {
 
 .footerTitle {
     font-weight: 700;
-    color: #373737;
     margin: 0px;
 }
 
 
 
 
-.div1 {
+.footerBranding {
     display: grid;
     background-color: #373737;
     max-width: 210px;
@@ -39,13 +47,15 @@ footer {
     border: 1px solid black;
     justify-content: center;
     align-items: center;
-    width: auto;
 }
 
 
 
-
-
+.footerNavigation {
+    display: grid;
+    grid-template-rows: 47px 142px;
+    
+}
 
 
 .navFooter {
@@ -56,25 +66,25 @@ footer {
     border-left: 0;
 }
 
-.div2 {
-    display: grid;
-    grid-template-rows: 47px 142px;
-    
+
+.payments {
+  border-bottom: 1px solid black;
+  border-top: 0;
+  padding: 19px 0 0 16px;
+  margin: 0;
 }
 
-.div3 {
+.footerInfo {
     border-top: 1px solid black;
     padding: 19px 21px 0 21px;
     border-bottom: 1px solid black;
     grid-template-rows: auto;
-    /* align-content: center; */
-    /* justify-content: center; */
     height: 100%;
     display: grid;
     gap: 15px;
 }
 
-.div4 {
+.footerContact {
     display: grid;
     grid-template-rows: 99px 90px;
 }
@@ -101,7 +111,6 @@ footer {
     gap: 8px;
 }
 .faqContainer a {
-    color: #373737;
     outline: none;
     text-decoration: none;
 
@@ -110,11 +119,9 @@ footer {
 
 .navFooter a {
     font-weight: 700;
-    color: #373737;
     outline: none;
     text-decoration: none;
     padding: 15px 0;
-    outline: none;
 }
 
 .certificateandpayments {
@@ -124,9 +131,6 @@ footer {
     grid-template-rows: 142px;
 }
 
-.payments {
-    border-bottom: 1px solid black;
-}
 
 .security {
     border: 1px solid black;
@@ -135,11 +139,7 @@ footer {
     padding: 19px 0 0 16px;
 }
 
-.payments {
-    padding: 19px 0 0 16px;
-    margin: 0px;
-    border-top: 0;
-}
+
 
 .securityIconsContainer {
     display: grid;

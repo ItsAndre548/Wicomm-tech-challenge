@@ -24,7 +24,7 @@ export default function Footer({
     <footer>
       <NewsLetter formImage={formImage} />
       <div className="parent">
-        <div className="div1">
+        <div className="footerBranding">
           <img
             src={logoFooter}
             width={75}
@@ -32,17 +32,17 @@ export default function Footer({
             alt="Footer Logo"
           />
         </div>
-        <div className="div2">
+        <div className="footerNavigation">
           <NavFooter footerNavItems={footerNavItems} />
           <div className="certificateandpayments">
               <FooterPaymentMethod paymentTitle={paymentTitle} icons={paymentsIcons} />
               <FooterSecurity certificateTitle={certificate} securityIcons={securityIcons} />
           </div>
         </div>
-        <div className="div3">
+        <div className="footerInfo">
           <FooterInfo faq={faq} />
         </div>
-        <div className="div4">
+        <div className="footerContact">
             <FooterContact contactNumber={contactNumber} contactemail={contactEmail} />
              <FooterIcons icons={Socials} />
         </div>

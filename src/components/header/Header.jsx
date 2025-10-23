@@ -15,7 +15,7 @@ export default function Header({
 }) {
   return (
     <header>
-      <div className="leftContainer">
+      <div className="headerLeft">
         <div className="logoBar">
           <img
             src={headerLogo}
@@ -27,7 +27,7 @@ export default function Header({
         </div>
         <Collections itemsCollection={itemsCollection} />
       </div>
-      <div className="rightContainer">
+      <div className="headerRight">
         <NavHeader navItems={navItems}  contexto="header" />
         <HeaderSearch searchIcon={searchIcon} />
         <UserContainer userIcon={userIcon} />

@@ -23,7 +23,7 @@
   background-color: #efefef;
   color: black;
   border-radius: 9px;
-  padding: 8px 16px 8px 16px;
+  padding: 8px 16px;
 }
 .heroSlider__header a:first-child {
   font-weight: 700;
@@ -105,7 +105,7 @@
 
 .heroSliderText_container {
   position: absolute;
-  top: 274px !important; 
+  top: 274px; 
   left: 241px;
   width: 338px;
 }
@@ -196,14 +196,9 @@
 
 
 
-.embla__dot {
-  display: none;
-}
 
 
-.embla__dot--selected {
-  display: none;
-}
+
 
 .backgroundImage {
   display: flex;
@@ -220,16 +215,10 @@
   margin-top: 66px;
 }
 
-.rigtHeroSliderImage {
-  position: relative;
-  align-self: end;
-}
 
 
 .middleImages {
   position: absolute;
-  display: flex;
-  justify-content: space-between;
   inset: 0;
 }
 

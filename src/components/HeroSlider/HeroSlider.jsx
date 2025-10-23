@@ -92,18 +92,6 @@ export default function HeroSlider({ heroItems, options }) {
             className="carouselcollection__button--next"
           />
         </div>
-
-        <div className="embla__dots">
-          {scrollSnaps.map((_, index) => (
-            <DotButton
-              key={index}
-              onClick={() => onDotButtonClick(index)}
-              class={`embla__dot${
-                index === selectedIndex ? " embla__dot--selected" : ""
-              }`}
-            />
-          ))}
-        </div>
       </div>
     </section>
   );
