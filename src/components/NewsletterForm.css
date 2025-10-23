@@ -19,19 +19,23 @@
 }
 
 .newsletterTitleContainer {
-    position: absolute;;
-    right: 399px;
-    top: 57px;
+    /* position: absolute;; */
+    right: 382px;
+    top: 86px;
 }
 
-.newsletterText {
+.newsletterTextContainer {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    margin-bottom: 89px;
+    margin-bottom: 128px;
     font-size: 14px;
     max-width: 295px;
 
+}
+
+.newsletterText {
+    margin: 0;
 }
 
 

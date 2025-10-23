@@ -26,14 +26,11 @@ export default function NewsletterForm({ formImage }) {
       <div>
         <img src={formImage} width={505} height={347} alt={formImage} />
       </div>
-      <div className="newsletterTitleContainer">
+      <div className="newsletterTextContainer">
         <p className="newsletterTitle">NEWSLETTER</p>
-      </div>
-      <div className="newsletterText">
-        <p>
-          <strong>CADASTRE-SE E GANHE 10% OFF NA SUA PRIMEIRA COMPRA</strong>
-        </p>
-        <p>Seja a primeira a receber lançamentos, novidades e promoções.</p>
+        <p ckass="newsletterText">
+          <strong>CADASTRE-SE E GANHE 10% OFF NA SUA PRIMEIRA COMPRA</strong><br/><br/>
+          Seja a primeira a receber lançamentos, novidades e promoções.</p>
       </div>
       <form
         className="newsletter"
