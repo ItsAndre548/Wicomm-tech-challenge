@@ -3,6 +3,7 @@
     --slide-spacing: 1rem;
     --slide-size: 90%;
     overflow: hidden;
+    margin-top: -70px;
   }
   .embla__viewport {
     overflow: hidden;
@@ -67,4 +68,19 @@
   padding: 5px;
   border-radius: 50%;
   border: none;
+}
+
+.ctaCarousel {
+  position: absolute;
+  bottom: 95px;
+  left: 490px;
+}
+
+.ctaCarouselBTN {
+  color: white;
+  font-size: 16px;
+  padding: 12px 28px;
+  border-radius: 60px;
+  text-align: center;
+  background-color: black;
 }

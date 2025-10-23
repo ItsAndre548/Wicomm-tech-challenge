@@ -31,6 +31,7 @@ const EmblaCarousel = (props) => {
               <a href={index.href}>
                 <img src={index.src} class="img-carousel" width={1779} height={559} />
               </a>
+              <div class="ctaCarousel"><a class="ctaCarouselBTN">{index.btnText}</a></div>
             </div>
           ))}
         </div>

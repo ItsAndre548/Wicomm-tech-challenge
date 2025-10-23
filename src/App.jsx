@@ -12,7 +12,7 @@ import VideoWithText from "./components/videoWithText/VideoWithText";
 function App() {
   const headerLogo = "/Assets/HeaderLogo.png";
   const slides = [
-    { src: "/Assets/banner_01.png", href: "/new-colection" },
+    { src: "/Assets/banner_01.png", href: "/new-colection", btnText: "VER COLEÇÃO" },
     { src: "/Assets/banner_02.png", href: "/our-cats" },
     { src: "/Assets/banner_03.png", href: "/more-cats" },
   ];
