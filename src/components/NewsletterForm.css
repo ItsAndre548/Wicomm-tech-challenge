@@ -1,15 +1,15 @@
 .newsletterSection {
     margin: 0 auto 57px auto;
-    /* margin-bottom: 57px; */
     height: 387px;
     width: 100%;
     max-width: 1240px;
     border-top: 1px solid black;
     display: grid;
-    grid-template-columns: 505px 295px 400px;
+    grid-template-columns: 1fr 0.8fr 1fr;
     padding-top: 40px;
     justify-content: space-between;
     position: relative;
+    gap: 15px;
 }
 
 .newsletterTitle {
@@ -18,11 +18,6 @@
     margin: 0;
 }
 
-.newsletterTitleContainer {
-    /* position: absolute;; */
-    right: 382px;
-    top: 86px;
-}
 
 .newsletterTextContainer {
     display: flex;
@@ -72,7 +67,7 @@
 .formBTN:hover {
     background-color: white;
 }
-.formBTN:click {
+.formBTN:active {
     background-color: black;
     color: white;
 }
