@@ -3,8 +3,7 @@
     max-width: 1026px;
     background-color: #efefef;
     justify-content: space-between;
-    margin: 0 auto;
-    margin-top: 42px;
+    margin: 42px auto 0;
     height: 563px;
 }
 
@@ -20,6 +19,7 @@ video {
   width: 504px;
   height: 284px;
 }
+
 
 .playIcon {
   position: absolute;
@@ -59,11 +59,8 @@ video {
     font-size: 70px;
     color: #373737;
     font-weight: 400;
-    /* z-index: 2; */
 }
-.videoRightContainer {
-    width: 100%;
-}
+
 
 
 .videoTextContent {
@@ -74,7 +71,7 @@ video {
     margin-top: 55px;
 }
 
-.videoTextContent a {
+.videoWithTextCTA {
     padding: 10px 87px;
     border: 1px solid black;
     text-decoration: none;

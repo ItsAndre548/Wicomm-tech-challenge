@@ -47,7 +47,7 @@ export default function VideoWithText({
         </div>
         <div className="videoTextContent">
           <p className="videoWithTextDescription">{description}</p>
-          <a href={link} className="videoWithTextLink">
+          <a href={link} className="videoWithTextCTA">
             {linkText}
           </a>
         </div>
