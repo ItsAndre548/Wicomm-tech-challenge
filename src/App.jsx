@@ -27,7 +27,7 @@ function App() {
     { href: "/lookbook", label: "LOOKBOOK" },
     { href: "/about", label: "SOBRE A GAT" },
     { href: "/whishlist", label: "WISHLIST" },
-];
+  ];
   const itemsCollection = [
     { src: "/Assets/menu_01.png", collectionName: "Produtos" },
     { src: "/Assets/menu_02.png", collectionName: "Coleções" },
@@ -163,7 +163,7 @@ function App() {
   ];
   const paymentsIcons = [
     { src: "/Assets/payment/americanexpress.png" },
-    { src: "/Assets/payment/discover.png"},
+    { src: "/Assets/payment/discover.png" },
     { src: "/Assets/payment/visa.png" },
     { src: "/Assets/payment/mastercard.png" },
     { src: "/Assets/payment/elo.png" },
@@ -171,25 +171,53 @@ function App() {
     { src: "/Assets/payment/hipercard.png" },
   ];
   const securityIcons = [
-    { src: "/Assets/secureSeals/empresaBcertificada.png", windth: 68, height: 100 },
-    { src: "/Assets/secureSeals/opinioesverdadeiras.png", windth: 68, height: 75 },
+    {
+      src: "/Assets/secureSeals/empresaBcertificada.png",
+      windth: 68,
+      height: 100,
+    },
+    {
+      src: "/Assets/secureSeals/opinioesverdadeiras.png",
+      windth: 68,
+      height: 75,
+    },
     { src: "/Assets/secureSeals/encryption.png", windth: 110, height: 46 },
   ];
   const Socials = [
-    { src: "/Assets/socials/instagram.png", link: "/instagram", width: 19, height: 19 },
-    { src: "/Assets/socials/youtube.png", link: "/youtube", width: 19, height: 19 },
-    { src: "/Assets/socials/linkedin.png", link: "/linkedin", width: 19, height: 19 },
-    { src: "/Assets/socials/facebook.png", link: "/facebook", width: 9, height: 18 },
-  ]
+    {
+      src: "/Assets/socials/instagram.png",
+      link: "/instagram",
+      width: 19,
+      height: 19,
+    },
+    {
+      src: "/Assets/socials/youtube.png",
+      link: "/youtube",
+      width: 19,
+      height: 19,
+    },
+    {
+      src: "/Assets/socials/linkedin.png",
+      link: "/linkedin",
+      width: 19,
+      height: 19,
+    },
+    {
+      src: "/Assets/socials/facebook.png",
+      link: "/facebook",
+      width: 9,
+      height: 18,
+    },
+  ];
 
   const FAQ = [
     { label: "FAQ", link: "/faq" },
-    { label: "Sobre nossos produtos",link: "/prazos-de-entrega" },
-    { label: "Trocas e devoluções", link: "/trocas-e-devolucoes"},
+    { label: "Sobre nossos produtos", link: "/prazos-de-entrega" },
+    { label: "Trocas e devoluções", link: "/trocas-e-devolucoes" },
     { label: "Entregas", link: "/entregas", width: 68 },
     { label: "Indique e ganhe", link: "/indique-e-ganhe" },
     { label: "Garantias", link: "/garantias" },
-  ]
+  ];
   const hotspotItems = [
     {
       top: "47%",
@@ -242,9 +270,9 @@ function App() {
       linkText: "VER SELEÇÃO",
     },
   ];
-  const paymentTitle = "FORMAS DE PAGAMENTO"
-  const logoFooter = "/Assets/logofooter.png"
-  const certificate = "CERTIFICADOS E SEGURANÇA"
+  const paymentTitle = "FORMAS DE PAGAMENTO";
+  const logoFooter = "/Assets/logofooter.png";
+  const certificate = "CERTIFICADOS E SEGURANÇA";
   const video = [
     {
       videoSrc: "/Assets/catVideo.mp4",
@@ -256,9 +284,9 @@ function App() {
       thumbnailUrl: "/Assets/catTumbnail.jpg",
     },
   ];
-  const contactNumber = "(51) 9999-9999"
-  const contactEmail = "ajuda@gat.com.br"
-  const formImage = "/Assets/formImage.png"
+  const contactNumber = "(51) 9999-9999";
+  const contactEmail = "ajuda@gat.com.br";
+  const formImage = "/Assets/formImage.png";
 
   const OPTIONS = { loop: true };
   return (
@@ -285,7 +313,19 @@ function App() {
         hotspotItem={hotspotItems}
       />
       <VideoWithText {...video[0]} />
-      <Footer   formImage={formImage} logoFooter={logoFooter} certificate={certificate} contactNumber={contactNumber} contactEmail={contactEmail} footerNavItems={footerNavItems} paymentTitle={paymentTitle} paymentsIcons={paymentsIcons} Socials={Socials} securityIcons={securityIcons} faq={FAQ} />
+      <Footer
+        formImage={formImage}
+        logoFooter={logoFooter}
+        certificate={certificate}
+        contactNumber={contactNumber}
+        contactEmail={contactEmail}
+        footerNavItems={footerNavItems}
+        paymentTitle={paymentTitle}
+        paymentsIcons={paymentsIcons}
+        Socials={Socials}
+        securityIcons={securityIcons}
+        faq={FAQ}
+      />
     </>
   );
 }
